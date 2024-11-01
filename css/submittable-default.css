@@ -1,0 +1,197 @@
+/*Fix for older versions of Wordpress*/
+*, :after, :before {
+     box-sizing: border-box; 
+}
+/*Collapse Styles*/
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+/* Submittable Specific Styling */
+.category {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.panel-btn {
+    color: #333;
+    padding: 25px;
+    margin: 20px 0 0;
+    cursor: pointer;
+    min-height: 110px;
+    border: 1px solid #e5e5e5;
+    border-bottom-width: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+.panel-btn:hover {
+    background-color: #f1f1f1;
+}
+.relative {
+    position: relative;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.title-column {
+    width: 60%;
+    white-space: normal;
+    margin-right: 10px;
+}
+.header-3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: 'proxima-nova', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+.header-3 a {
+    color: #333;
+    text-decoration: none;
+    box-shadow: none !important;
+}
+.header-3 a:hover {
+    color: #1e1e1e;
+}
+.fee-column {
+    color: #868686;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'proxima-nova', sans-serif;
+}
+.more-column {
+    width: 15%;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 600;
+}
+.category-description {
+    min-height: 110px;
+    border: 1px solid #e5e5e5;
+    border-bottom-width: 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    white-space: nowrap;
+    white-space: normal;
+    border-top: none;
+    padding: 45px;
+}
+.btn.org-primary {
+    background-color: #fc5b30;
+    color: #fff!important;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'proxima-nova', sans-serif;
+    line-height: 1;
+    padding: 13px 40px;
+    border-radius: 3px;
+    border: none;
+}
+.link-color-inverted:hover {
+    background-color: #eb5000;
+}
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.sbm-logo {
+    height: 20px;
+    width: 185px;
+    margin: 20px auto;
+}
+.sbm-pub-text {
+    font-size: 15px;
+    color: #333;
+}
+.caret {
+  position: relative;
+  cursor: pointer;
+}
+.collapsed .caret:before {
+  content: '';
+  position: relative;
+  top: 13px;
+  left: 5px;
+  border-top: 5px solid #333;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.more-column:not(.collapsed) .caret:before {
+  content: '';
+  position: relative;
+  top: -12px;
+  left: 5px;
+  border-bottom: 5px solid #333;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+@media screen and (max-width:1023px){
+    .panel-btn {
+        min-height:0;
+        border:1px solid #ddd;
+        border-radius:3px;
+        background-color:transparent;
+        margin: 15px 0;
+        padding:20px 30px
+    }
+}
+@media screen and (min-width:761px){
+    .hidden-md-up{
+        display:none;
+    }
+}
+@media screen and (max-width:760px){
+    .hidden-md-down{
+        display:none;
+    }
+    .panel-btn {
+        padding: 30px 32px 25px 22px;
+        white-space: normal;
+        margin: 10px 0 0 0;
+    }
+    .header-3 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .title-column {
+        width: 80%;
+    }
+    .more-column {
+        width: 90px;
+    }
+    .submit-column {
+        width: 25px;
+        background-color: #fc5b30;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2020%2020%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20id%3D%22path-1%22%20points%3D%2210.7189231%2018.2606077%2010.7189231%200.000146153846%200%200.000146153846%200%2018.2606077%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20id%3D%22submitticon-pub-next%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M0%2C15.9148385%20L2.60592308%2C18.2606077%20L4.61992308%2C16.1866846%20L4.64915385%2C16.2129923%20L10.4953077%2C9.71791538%20C10.7949231%2C9.38468462%2010.7949231%2C8.87753077%2010.4953077%2C8.5443%20L4.64915385%2C2.04776154%20L4.61992308%2C2.07406923%20L2.60592308%2C0.000146153846%20L0%2C2.34591538%20L6.251%2C9.13037692%20L0%2C15.9148385%20Z%22%20id%3D%22Fill-1%22%20fill%3D%22%23FFFFFF%22%20mask%3D%22url(%23mask-2)%22%3E%3C%2Fpath%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 10px 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+    .category-description {
+        padding: 30px 32px 25px 22px;
+        white-space: normal;
+    }
+    .sbm-logo img {
+        height: 12px;
+        width: auto;
+    }
+    .btn.org-primary {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
